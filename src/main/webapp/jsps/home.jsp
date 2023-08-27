@@ -9,8 +9,8 @@
 </head>
 </head>
 <body>
-<h1 align="center">Welcome to Mithun Technologies Pvt Ltd. Ph No: +91-9980923226  Marathahalli,Bengaluru,Karnataka </h1>
-<h1 align="center"> Mithun Technologies- Very Good Training center for DevOps with AWS in Huderabad India and also for Job Assitance Job Support also...Teaching Real Time scnerios</h1>
+<h1 align="center">Welcome to Mithun Technologies Pvt Ltd. Ph No: +91-9010863722, Hyderabad,Telangana </h1>
+<h1 align="center"> Mithun Technologies- Very Good Training center for DevOps with AWS in Hyderabad India and also for Job Assitance Job Support also...Teaching Real Time scnerios</h1>
 <hr>
 <br>
 	<h1><h3> Server Side IP Address </h3><br>
