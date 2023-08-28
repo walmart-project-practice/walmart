@@ -13,3 +13,4 @@ sshagent(['4df79db1-2d17-4878-a518-22ae0bbb130d']) {
 sh "scp -o StrictHostKeyChecking=no target/maven-web-application.war ubuntu@13.234.33.49:/opt/apache-tomcat-9.0.80/webapps"
 }
 }
+}
