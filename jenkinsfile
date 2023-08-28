@@ -1,6 +1,8 @@
 node{
 
 def mavenhome = tool name: "maven3.8.5"
+properties([buildDiscarder(logRotator(artifactDaysToKeepStr: '', artifactNumToKeepStr: '5', daysToKeepStr: '', numToKeepStr: '5'))])
+properties([pipelineTriggers([cron('* * * * *')])])
 stage('checkout code'){
 git branch: 'development', credentialsId: '2e9a5d39-c4fd-4978-a029-7b94d24f3203', url: 'https://github.com/walmart-project-practice/walmart.git'
 }
