@@ -1,0 +1,17 @@
+node{
+
+def mavenhome = tool name maven3.8.5
+stage('checkout code'){
+git branch: 'development', credentialsId: '2e9a5d39-c4fd-4978-a029-7b94d24f3203', url: 'https://github.com/walmart-project-practice/walmart.git'
+}
+stage('build'){
+sh "$mavenhome/bin/mvn clean package"
+}
+
+stage('deploye to tomcat'){
+sshagent(['4df79db1-2d17-4878-a518-22ae0bbb130d']) {
+sh " scp -o StrictHostKeyChecking=no target/maven-web-application.war ubuntu@13.234.33.49:/opt/apache-tomcat-9.0.80/webapps"
+    }
+    }
+
+    }
